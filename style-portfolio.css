@@ -162,8 +162,8 @@ section {
 .main-timeline9:before{content:"";width:3px;height:100%;background:#302124;position:absolute;top:0;left:50%}
 .main-timeline9 .timeline{width:50%;float:left;position:relative;z-index:1}
 .main-timeline9 .timeline:after,.main-timeline9 .timeline:before{content:"";display:block;width:100%;clear:both}
-.main-timeline9 .timeline:first-child:before,.main-timeline9 .timeline:last-child:before{content:"";width:25px;height:25px;border-radius:50%;background:#fff;border:4px solid #29095c;position:absolute;top:0;right:-14px;z-index:1}
-.main-timeline9 .timeline:last-child:before{top:auto;bottom:0}
+/*.main-timeline9 .timeline:first-child:before,.main-timeline9 .timeline:last-child:before{content:"";width:25px;height:25px;border-radius:50%;background:#fff;border:4px solid #29095c;position:absolute;top:0;right:-14px;z-index:1}
+.main-timeline9 .timeline:last-child:before{top:auto;bottom:0}*/
 .main-timeline9 .timeline:last-child:nth-child(even):before{right:auto;left:-12px;bottom:-2px}
 .main-timeline9 .timeline-content{text-align:center;margin-top:8px;position:relative;transition:all .3s ease 0s}
 .main-timeline9 .timeline-content:before{content:"";width:100%;height:5px;background:#29095c;position:absolute;top:88px;left:0;z-index:-1}
@@ -198,9 +198,11 @@ section {
 .main-timeline9 .timeline:first-child,.main-timeline9 .timeline:last-child:nth-child(even){margin:0}
 @media only screen and (max-width:990px){.main-timeline9:before{left:100%}
 .main-timeline9 .timeline{width:100%;float:none;margin-bottom:20px!important}
-.main-timeline9 .timeline:first-child:before,.main-timeline9 .timeline:last-child:before{left:auto!important;right:-13px!important}
+/*.main-timeline9 .timeline:first-child:before,.main-timeline9 .timeline:last-child:before{left:auto!important;right:-13px!important}
+*/
 .main-timeline9 .timeline:nth-child(2n) .circle{float:left;margin:0 25px 0 0}
-.main-timeline9 .timeline:nth-child(2n) .circle:before{right:-33px;left:auto;box-shadow:7px 0 9px -7px #444 inset}
+/*.main-timeline9 .timeline:nth-child(2n) .circle:before{right:-33px;left:auto;box-shadow:7px 0 9px -7px #444 inset}
+*/
 .main-timeline9 .timeline:nth-child(2n) .circle span:after,.main-timeline9 .timeline:nth-child(2n) .circle span:before{right:-33px;left:auto;border-radius:0 0 0 21px}
 .main-timeline9 .timeline:nth-child(2n) .circle span:after{border-radius:21px 0 0}
 .main-timeline9 .timeline:nth-child(2n) .content{padding:0 40px 0 0;margin-left:0}
@@ -212,11 +214,23 @@ section {
 }
 @media only screen and (max-width:480px){.main-timeline9:before{left:0}
 .main-timeline9 .timeline:first-child:before,.main-timeline9 .timeline:last-child:before{left:-12px!important;right:auto!important}
-.main-timeline9 .circle,.main-timeline9 .timeline:nth-child(2n) .circle{width:130px;height:130px;float:none;margin:0 auto}
+/*.main-timeline9 .circle,.main-timeline9 .timeline:nth-child(2n) .circle{width:130px;height:130px;float:none;margin:0 auto}
 .main-timeline9 .timeline-content:before{width:99.5%;top:68px;left:.5%}
+*/
 .main-timeline9 .circle span{line-height:115px;font-size:60px}
 .main-timeline9 .circle span:after,.main-timeline9 .circle span:before,.main-timeline9 .circle:before,.main-timeline9 .icon{display:none}
 .main-timeline9 .content,.main-timeline9 .timeline:nth-child(2n) .content{padding:0 10px}
 .main-timeline9 .year{margin-bottom:15px}
 .main-timeline9 .description{text-align:center}
 }
+
+  
+.icon-img {
+    width: 100%; /* Make the image fill the span */
+    height: 100%; /* Ensure it fills the span */
+    border-radius: 50%; /* Round the corners to create a circle */
+    object-fit: cover; /* Scale the image to cover the area proportionally */
+    display: block; /* Remove inline spacing or gaps */
+    opacity: 0.8; /* Set the transparency to 50% */
+  }
+  
