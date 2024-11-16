@@ -212,17 +212,60 @@ section {
 .main-timeline9 .timeline:nth-child(2n) .icon span:after{border-radius:0 21px 0 0}
 .main-timeline9 .timeline:nth-child(2),.main-timeline9 .timeline:nth-child(even),.main-timeline9 .timeline:nth-child(odd){margin:0}
 }
-@media only screen and (max-width:480px){.main-timeline9:before{left:0}
-.main-timeline9 .timeline:first-child:before,.main-timeline9 .timeline:last-child:before{left:-12px!important;right:auto!important}
-/*.main-timeline9 .circle,.main-timeline9 .timeline:nth-child(2n) .circle{width:130px;height:130px;float:none;margin:0 auto}
-.main-timeline9 .timeline-content:before{width:99.5%;top:68px;left:.5%}
-*/
-.main-timeline9 .circle span{line-height:115px;font-size:60px}
-.main-timeline9 .circle span:after,.main-timeline9 .circle span:before,.main-timeline9 .circle:before,.main-timeline9 .icon{display:none}
-.main-timeline9 .content,.main-timeline9 .timeline:nth-child(2n) .content{padding:0 10px}
-.main-timeline9 .year{margin-bottom:15px}
-.main-timeline9 .description{text-align:center}
+@media only screen and (max-width:480px){
+    .main-timeline9:before {
+        left: 0;
+    }
+    .main-timeline9 .timeline:first-child:before,
+    .main-timeline9 .timeline:last-child:before {
+        left: -12px!important;
+        right: auto!important;
+    }
+
+    /* Ajuste o tamanho das bolinhas para metade */
+    .main-timeline9 .circle,
+    .main-timeline9 .timeline:nth-child(2n) .circle {
+        width: 90px;
+        height: 90px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    /* Ajuste o conteúdo dentro das bolinhas */
+    .main-timeline9 .circle span {
+        line-height: 80px; /* Centraliza verticalmente o conteúdo */
+        font-size: 40px;   /* Reduz o tamanho da fonte proporcionalmente */
+    }
+
+    /* Ajuste a posição do elemento antes de .timeline-content */
+    .main-timeline9 .timeline-content:before {
+        width: 99.5%;
+        top: 48px; /* Ajusta a posição vertical */
+        left: .5%;
+    }
+
+    /* Esconde elementos que podem distorcer o layout no tamanho reduzido */
+    .main-timeline9 .circle span:after,
+    .main-timeline9 .circle span:before,
+    .main-timeline9 .circle:before,
+    .main-timeline9 .icon {
+        display: none;
+    }
+
+    .main-timeline9 .content,
+    .main-timeline9 .timeline:nth-child(2n) .content {
+        padding: 0 10px;
+    }
+
+    .main-timeline9 .year {
+        margin-bottom: 15px;
+    }
+
+    .main-timeline9 .description {
+        text-align: center;
+    }
 }
+
 
   
 .icon-img {
